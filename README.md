@@ -2,13 +2,15 @@
 
 ## Vue Boilerplate:
 
--   🦾 Typescript
--   🦾 SCSS
--   🦾 Tailwind
--   🦾 Iconify
--   🦾 Pinia
--   🦾 Routing
--   🦾 Vitest
+-   Typescript
+-   SCSS
+-   [UnoCSS](https://github.com/antfu/unocss) - With Tailwind preset
+-   [Iconify](https://iconify.design/)
+-   [FloatingVue](https://floating-vue.starpad.dev/) - tooltips, dropdowns and other poppers
+
+-   [Pinia](https://pinia.vuejs.org/) - State management
+-   [Routing](https://router.vuejs.org/) - Vue router
+-   [Vitest](Vitehttps://vitest.dev) - Tests
 
 ## Recommended IDE Setup
 
