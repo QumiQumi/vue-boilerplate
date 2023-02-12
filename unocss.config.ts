@@ -32,11 +32,6 @@ export default defineConfig({
 			card: "var(--color--card)",
 			icon: "var(--color--icon)",
 
-			popup: {
-				DEFAULT: "var(--color--popup)",
-				text: "var(--color--popup-text)",
-				hover: "var(--color--popup-hover)",
-			},
 			tooltip: {
 				DEFAULT: "var(--color--tooltip)",
 				text: "var(--color--tooltip-text)",

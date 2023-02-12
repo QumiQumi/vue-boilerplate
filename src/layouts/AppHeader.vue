@@ -1,12 +1,14 @@
 <script setup lang="ts">
+import ButtonPrimary from "@/components/button/ButtonPrimary.vue";
+import ButtonSecondary from "@/components/button/ButtonSecondary.vue";
 import ThemeToggler from "@/components/ThemeToggler.vue";
 </script>
 <template>
 	<header class="p-4">
 		<div class="wrapper">
 			<nav class="flex items-center gap-4">
-				<RouterLink class="link" to="/">Home</RouterLink>
-				<RouterLink class="link" to="/about">About</RouterLink>
+				<ButtonPrimary to="/">Home</ButtonPrimary>
+				<ButtonSecondary to="/about">About</ButtonSecondary>
 				<ThemeToggler />
 			</nav>
 		</div>
