@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import ThemeToggler from "./ThemeToggler.vue";
+
 defineProps<{
 	msg: string;
 }>();
@@ -10,15 +12,7 @@ defineProps<{
 			{{ msg }}
 			<span v-tooltip="'Balsaflo'">I am tooltip</span>
 		</h1>
-		<h3>
-			You’ve successfully created a project with
-			<a href="https://vitejs.dev/" target="_blank" rel="noopener"
-				>Vite</a
-			>
-			+
-			<a href="https://vuejs.org/" target="_blank" rel="noopener">Vue 3</a
-			>. What's next?
-		</h3>
+		<ThemeToggler />
 	</div>
 </template>
 
