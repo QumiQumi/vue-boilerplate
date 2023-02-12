@@ -12,7 +12,6 @@ defineProps<{
 			{{ msg }}
 			<span v-tooltip="'Balsaflo'">I am tooltip</span>
 		</h1>
-		<ThemeToggler />
 	</div>
 </template>
 

@@ -5,9 +5,7 @@ const toggleDark = useToggle(isDark);
 </script>
 
 <template>
-	<button @click="toggleDark()">
-		<i inline-block align-middle i="dark:carbon-moon carbon-sun" />
-
-		<span class="ml-2">{{ isDark ? "Dark" : "Light" }}</span>
+	<button @click="toggleDark()" class="flex items-center gap-1 p-3">
+		<i class="dark:i-ri-moon-line i-ri-sun-line"></i>
 	</button>
 </template>

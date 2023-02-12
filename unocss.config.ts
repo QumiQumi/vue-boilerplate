@@ -1,10 +1,48 @@
 import { Theme } from "@unocss/preset-wind";
-import { defineConfig, presetWind, transformerDirectives } from "unocss";
-
+import {
+	defineConfig,
+	presetAttributify,
+	presetIcons,
+	presetWind,
+	transformerDirectives,
+} from "unocss";
 export default defineConfig({
-	presets: [presetWind({})],
+	presets: [presetWind(), presetIcons({}), presetAttributify()],
 	transformers: [transformerDirectives()],
-	theme: {},
+	theme: {
+		colors: {
+			inherit: "inherit",
+			current: "currentColor",
+			transparent: "transparent",
+			black: "#000000",
+			white: "#ffffff",
+
+			text: {
+				primary: "var(--color--text-primary)",
+				secondary: "var(--color--text-secondary)",
+				disabled: "var(--color--text-disabled)",
+			},
+			bg: {
+				primary: "var(--color--bg-primary)",
+				secondary: "var(--color--bg-secondary)",
+			},
+
+			divider: "var(--color--divider)",
+			border: "var(--color--border)",
+			card: "var(--color--card)",
+			icon: "var(--color--icon)",
+
+			popup: {
+				DEFAULT: "var(--color--popup)",
+				text: "var(--color--popup-text)",
+				hover: "var(--color--popup-hover)",
+			},
+			tooltip: {
+				DEFAULT: "var(--color--tooltip)",
+				text: "var(--color--tooltip-text)",
+			},
+		},
+	},
 	preflights: [
 		// If you want to inline colors and shadows to css vars
 		// {
