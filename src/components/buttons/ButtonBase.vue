@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed, type PropType } from "vue";
-import IconBase from "../icon/IconBase.vue";
+import IconBase from "../icons/IconBase.vue";
 type Theme = "primary" | "secondary";
 type Color = "green";
 type Size = "sm" | "md" | "lg";

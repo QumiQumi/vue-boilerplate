@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import ThemeToggler from "./ThemeToggler.vue";
-
 defineProps<{
 	msg: string;
 }>();

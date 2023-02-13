@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import ButtonPrimary from "@/components/button/ButtonPrimary.vue";
-import ButtonSecondary from "@/components/button/ButtonSecondary.vue";
+import ButtonPrimary from "@/components/buttons/ButtonPrimary.vue";
+import ButtonSecondary from "@/components/buttons/ButtonSecondary.vue";
 import ThemeToggler from "@/components/ThemeToggler.vue";
 </script>
 <template>
