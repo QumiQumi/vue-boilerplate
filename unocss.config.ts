@@ -7,7 +7,18 @@ import {
 	transformerDirectives,
 } from "unocss";
 export default defineConfig({
-	presets: [presetWind(), presetIcons({}), presetAttributify()],
+	presets: [
+		presetWind(),
+		presetIcons({
+			prefix: "",
+			extraProperties: {
+				"inline-flex": "inline-flex",
+				"vertical-align": "baseline",
+				flex: "1",
+			},
+		}),
+		presetAttributify(),
+	],
 	transformers: [transformerDirectives()],
 	theme: {
 		colors: {

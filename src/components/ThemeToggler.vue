@@ -6,6 +6,6 @@ const toggleDark = useToggle(isDark);
 
 <template>
 	<button @click="toggleDark()" class="flex items-center gap-1 p-3">
-		<i class="dark:i-ri-moon-line i-ri-sun-line"></i>
+		<i class="dark:ri-moon-line ri-sun-line"></i>
 	</button>
 </template>

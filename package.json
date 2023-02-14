@@ -20,6 +20,7 @@
 	"devDependencies": {
 		"@iconify-json/carbon": "^1.1.14",
 		"@iconify-json/ri": "^1.1.4",
+		"@kyvg/vue3-notification": "^2.8.0",
 		"@rushstack/eslint-patch": "^1.1.4",
 		"@types/jsdom": "^20.0.1",
 		"@types/node": "^18.11.12",

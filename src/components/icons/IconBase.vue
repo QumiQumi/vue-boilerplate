@@ -1,11 +1,8 @@
 <template v-if="icon">
-	<Component
-		v-bind="$attrs"
-		v-if="type === 'svg'"
-		class="icon"
-		:is="iconSvg"
-	></Component>
-	<i v-else v-bind="$attrs" class="icon" :class="icon"></i>
+	<div>
+		<Component v-if="type === 'svg'" class="icon" :is="iconSvg"></Component>
+		<i v-else class="icon" :class="icon"></i>
+	</div>
 </template>
 
 <script lang="ts">
