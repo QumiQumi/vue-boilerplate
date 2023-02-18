@@ -47,12 +47,12 @@ export default defineConfig({
 				DEFAULT: "var(--color--tooltip)",
 				text: "var(--color--tooltip-text)",
 			},
-			container: {
-				center: true,
-				padding: {
-					DEFAULT: "1rem",
-					sm: "2rem",
-				},
+		},
+		container: {
+			center: true,
+			padding: {
+				DEFAULT: "1rem",
+				sm: "2rem",
 			},
 		},
 	},

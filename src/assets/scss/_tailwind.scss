@@ -1,0 +1,7 @@
+@import "@unocss/reset/tailwind.css";
+
+*,
+::before,
+::after {
+	border-color: var(--color--border);
+}
