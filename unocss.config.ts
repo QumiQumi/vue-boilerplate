@@ -14,7 +14,7 @@ export default defineConfig({
 			extraProperties: {
 				"inline-flex": "inline-flex",
 				"vertical-align": "baseline",
-				flex: "1",
+				"min-width": "1em",
 			},
 		}),
 		presetAttributify(),
@@ -46,6 +46,13 @@ export default defineConfig({
 			tooltip: {
 				DEFAULT: "var(--color--tooltip)",
 				text: "var(--color--tooltip-text)",
+			},
+			container: {
+				center: true,
+				padding: {
+					DEFAULT: "1rem",
+					sm: "2rem",
+				},
 			},
 		},
 	},
