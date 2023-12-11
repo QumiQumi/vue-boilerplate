@@ -1,0 +1,97 @@
+.v-popper__popper.v-popper--theme-tooltip {
+	&[data-popper-placement^="right"] .v-popper__arrow-container {
+		left: 1px;
+	}
+	&[data-popper-placement^="right"] .v-popper__arrow-container {
+		right: 1px;
+	}
+	&[data-popper-placement^="top"] .v-popper__arrow-container {
+		bottom: -9px;
+	}
+	&[data-popper-placement^="bottom"] .v-popper__arrow-container {
+		top: -9px;
+	}
+	.v-popper {
+		&__inner {
+			max-width: 320px;
+			background: colorVar(tooltip);
+			padding: 4px 6px;
+			border-radius: 4px;
+			color: colorVar(tooltip-text);
+			font-weight: bold;
+			// text-transform: capitalize;
+			font-size: 12px;
+			line-height: 18px;
+			font-weight: 400;
+			text-align: center;
+		}
+
+		&__arrow-outer {
+			border-color: colorVar(tooltip);
+		}
+	}
+}
+
+// Used in chart
+.tooltip {
+	$a: 8px;
+	// max-width: 300px;
+	background: colorVar(tooltip);
+	padding: 4px 6px;
+	border-radius: 4px;
+	color: colorVar(tooltip-text);
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 18px;
+	font-weight: 400;
+	text-align: center;
+	position: relative;
+	transition: opacity 0.3s;
+	&:after {
+		bottom: 100%;
+		left: 50%;
+		border: solid transparent;
+		content: "";
+		height: 0;
+		width: 0;
+		position: absolute;
+		pointer-events: none;
+	}
+
+	&.top {
+		&:after {
+			bottom: 100%;
+			left: 50%;
+			border-bottom-color: colorVar(tooltip);
+			border-width: $a;
+			margin-left: -$a;
+		}
+	}
+	&.bottom {
+		&:after {
+			top: 100%;
+			left: 50%;
+			border-top-color: colorVar(tooltip);
+			border-width: $a;
+			margin-left: -$a;
+		}
+	}
+	&.right {
+		&:after {
+			left: 100%;
+			top: 50%;
+			border-left-color: colorVar(tooltip);
+			border-width: $a;
+			margin-top: -$a;
+		}
+	}
+	&.left {
+		&:after {
+			top: 100%;
+			left: 50%;
+			border-right-color: colorVar(tooltip);
+			border-width: $a;
+			margin-top: -$a;
+		}
+	}
+}

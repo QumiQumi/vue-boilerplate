@@ -1,0 +1,40 @@
+.vue-notification-group {
+	bottom: var(--footer-height) !important;
+	.vue-notification {
+		// border: solid 1px;
+		// border-radius: 4px;
+		// display: flex;
+		// align-items: center;
+		// pointer-events: auto;
+		// z-index: 10000;
+		// margin: 12px 0;
+		// style for title line
+		.notification-title {
+			/*...*/
+		}
+
+		// style for content
+		.notification-content {
+			// padding: rem(16px) rem(20px);
+
+			/*...*/
+		}
+
+		// additional styling hook when using`type` parameter, i.e. this.$notify({ type: 'success', message: 'Yay!' })
+		&.success {
+			// @apply bg-green-100 dark:bg-[rgba(2,122,72,.8)];
+			// @apply border-green-200 dark:border-transparent;
+			// @apply text-green-700  dark:text-green-300;
+		}
+		&.info {
+			// @apply bg-gray-200 dark:bg-gray-700;
+			// @apply border-gray-300 dark:border-transparent;
+			// @apply text-text-secondary;
+		}
+		&.error {
+			// @apply bg-red-900/95 dark:bg-[rgba(180,34,24,.3)];
+			// @apply border-red-900 dark:border-transparent;
+			// @apply text-red-500  dark:text-red-400;
+		}
+	}
+}

@@ -1,0 +1,21 @@
+html {
+	height: 100%;
+	font-size: 16px;
+}
+
+body {
+	--font-family: "SF Pro Display", sans-serif;
+	font-family: var(--font-family);
+	color: color("text.primary");
+	background-color: color("bg.primary");
+	margin: 0;
+	padding: 0;
+	min-height: 100vh;
+	font-size: 16px;
+	line-height: 125%;
+	@apply transition-colors;
+
+}
+#app {
+	height: 100vh;
+}

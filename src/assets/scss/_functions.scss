@@ -1,0 +1,24 @@
+@function hexToRGB($hex) {
+	@return red($hex), green($hex), blue($hex);
+}
+@function hexToRGBA($hex, $o: 1) {
+	@return rgba(hexToRGB($hex), $o);
+}
+@function rem($size, $baseSize: 16px) {
+	@return calc($size / $baseSize) * 1rem;
+}
+@function em($size, $baseSize: 16px) {
+	@return calc($size / $baseSize) * 1em;
+}
+@function color($name) {
+	@return theme("colors.#{$name}");
+}
+@function shadow($name) {
+	@return theme("boxShadow.#{$name}");
+}
+@function colorVar($name) {
+	@return var(--color--#{$name});
+}
+@function shadowVar($name) {
+	@return var(--shadow--#{$name});
+}
